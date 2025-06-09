@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    color: #4a4a4a;
+    font-size: 0.9rem;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 0.75rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#generateBtn {
+    margin-top: 1rem;
+    background: #28a745;
+}
+
+#generateBtn:hover {
+    background: #218838;
+}
+
+.passwords-container {
+    margin-top: 1.5rem;
+}
+
+#passwordsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.password-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.password-text {
+    flex: 1;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.copy-btn {
+    padding: 0.5rem 1rem;
+    background: #6c757d;
+    font-size: 0.9rem;
+}
+
+.copy-btn:hover {
+    background: #5a6268;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+#copyAllBtn {
+    width: 100%;
+    background: #6c757d;
+}
+
+#copyAllBtn:hover {
+    background: #5a6268;
+}
+
+.secondary-btn {
+    background: #6c757d;
+}
+
+.secondary-btn:hover {
+    background: #5a6268;
+} 

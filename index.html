@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字母数字密码生成器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>字母数字密码生成器</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="length">密码长度:</label>
+                <input type="number" id="length" min="4" max="32" value="12">
+            </div>
+            <div class="control-group">
+                <label for="quantity">生成数量:</label>
+                <input type="number" id="quantity" min="1" max="100" value="1">
+            </div>
+            <div class="control-group">
+                <label for="exclude">要规避的字符 (0-6个):</label>
+                <input type="text" id="exclude" maxlength="6" placeholder="输入要规避的字符">
+            </div>
+            <button id="generateBtn">生成密码</button>
+        </div>
+        <div class="passwords-container">
+            <div id="passwordsList"></div>
+            <div class="button-group">
+                <button id="copyAllBtn" class="secondary-btn">复制所有密码</button>
+                <button id="exportBtn" class="secondary-btn">导出Excel</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
